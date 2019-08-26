@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:background="#d99393"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/lista_para_comprar_crear_o_actualizar_lista_nombre_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Armar la lista de compra"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/listaDeCompra_creacion_oactualizacion_de_lista_nombreGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupo: "
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="250"
+        android:background="#3d2e9f"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view_lista_compra">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:background="#0000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/listaDeCompraRealizarCompra_crear_o_actualizar"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="5dp"
+            android:text="Crear/Actualizar"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/listaDeCompraRealizarCompra_aniadir_elemento"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Añadir nuevo elemento"
+            android:gravity="center_horizontal"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/listaDeCompraRealizarCompra_limpiar_lista"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Limpiar contenido"
+            android:gravity="center_horizontal"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/manejoHeladerasYListas">
+    <fragment
+        android:id="@+id/manejoHeladerasYListas"
+        android:name="kreutcom.myfreezercheck.Heladeras.manejoHeladerasYListas"
+        android:label="heladera_y_listas_listas_heladeras"
+        tools:layout="@layout/heladera_y_listas_listas_heladeras" >
+        <action
+            android:id="@+id/action_manejoHeladerasYListas_to_listaDeCompraDe1Grupo"
+            app:destination="@id/listaDeCompraDe1Grupo" />
+        <action
+            android:id="@+id/action_manejoHeladerasYListas_to_fragment_Mascotas"
+            app:destination="@id/fragment_Mascotas" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaDeCompraDe1Grupo"
+        android:name="kreutcom.myfreezercheck.ListaDeCompras.listaDeCompraDe1Grupo"
+        android:label="lista_para_comprar_de_1_heladera"
+        tools:layout="@layout/lista_para_comprar_de_1_heladera" />
+    <fragment
+        android:id="@+id/fragment_Mascotas"
+        android:name="kreutcom.myfreezercheck.Fragment_Mascotas"
+        android:label="fragment_fragment__mascotas"
+        tools:layout="@layout/fragment_fragment__mascotas" >
+        <action
+            android:id="@+id/action_fragment_Mascotas_to_manejoHeladerasYListas"
+            app:destination="@id/manejoHeladerasYListas" />
+    </fragment>
+</navigation>

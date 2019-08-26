@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_cuenta"
+            android:icon="@drawable/ic_aniadir_nueva_lista_compras"
+            android:title="Heladeras y listas"
+            ></item>
+        <item android:id="@+id/nav_mensajes"
+            android:icon="@drawable/ic_mis_mascotas"
+            android:title="Mascotas"
+            ></item>
+        <item android:id="@+id/nav_grafico_financiero"
+            android:icon="@drawable/ic_control_financiero_compras"
+            android:title="Gráfico financiero"
+            ></item>
+
+    </group>
+
+    <item android:title="Social">
+        <menu>
+            <item android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Configuración"
+                ></item>
+            <item android:id="@+id/nav_perfil"
+                android:icon="@drawable/ic_control_financiero_compras"
+                android:title="Configuración"
+                />
+            <item android:id="@+id/nav_misgrupos"
+                android:icon="@drawable/ic_mis_grupos"
+                android:title="Mis grupos"
+                ></item>
+            <item android:id="@+id/nav_compartir"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Compartir"
+                ></item>
+            <item android:id="@+id/nav_bug_report"
+                android:icon="@drawable/ic_bug_report_black_24dp"
+                android:title="Reportar bug"
+                ></item>
+        </menu>
+    </item>
+
+</menu>

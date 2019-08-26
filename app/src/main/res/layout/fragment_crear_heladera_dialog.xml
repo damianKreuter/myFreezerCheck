@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Heladeras.crearHeladera.crearHeladeraDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_crear_heladera_nombre_a_poner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:hint="Ingrese nombre"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Tipo"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerTipoCrearHeladera"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"
+                android:gravity="right">
+
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Grupo"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinnerGrupoCrearHeladera"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:autofillHints="Algo"
+                android:gravity="right"></Spinner>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dialog_crear_heladera_boton"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:paddingHorizontal="50dp"
+            android:text="Crear"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+
+</FrameLayout>
