@@ -35,26 +35,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setupNavigation();
-  //     setupNavigation();
 /*
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        // In reality the database and driver above should be created a single time
+// and passed around using your favourite dependency injection/service locator/singleton pattern.
 
-        drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+        SqlDriver driver = AndroidSqliteDriver(Database.Schema, this, "test.db");
+        Database database = Database(driver);
+        database = Database(driver);
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
-                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
+        PlayerQueries playerQueries = database.playerQueries;
 
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_host,
-                    new manejoHeladerasYListas()).commit();
-            navigationView.setCheckedItem(R.id.nav_cuenta);
-        }
+        println(playerQueries.selectAll().executeAsList());
+// Prints [HockeyPlayer.Impl(15, "Ryan Getzlaf")]
+
+        playerQueries.insert(player_number = 10, full_name = "Corey Perry");
+        println(playerQueries.selectAll().executeAsList());
+// Prints [HockeyPlayer.Impl(15, "Ryan Getzlaf"), HockeyPlayer.Impl(10, "Corey Perry")]
+
+        val player = HockeyPlayer(10, "Ronald McDonald");
+        playerQueries.insertFullPlayerObject(player);
+    //    setupNavigation();
 */
     }
 
